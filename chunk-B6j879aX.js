@@ -1,0 +1,2 @@
+import{nt as hr}from"./main-U6CKMA5U.js";var a=class t{generateCsv(c){let o=`ID,Title,Priority,Completed`,l=c.map(e=>[e.id,`"${e.title.replaceAll(`"`,`""`)}"`,e.priority,e.done].join(`,`)),s=new Blob([[o,...l].join(`
+`)],{type:`text/csv;charset=utf-8`}),i=URL.createObjectURL(s),r=document.createElement(`a`);r.href=i,r.download=`angular-v22-deliverables.csv`,r.click(),URL.revokeObjectURL(i)}static ɵfac=function(o){return new(o||t)};static ɵprov=hr({token:t,factory:t.ɵfac})};export{a as ReportExport};
